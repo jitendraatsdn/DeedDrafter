@@ -1,0 +1,58 @@
+﻿<ResourceDictionary 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+  <!-- String resource that can be localized -->
+  <sys:String x:Key="strDeedSplit">DEED: Split</sys:String>
+  <sys:String x:Key="strDeedMapUpdate">DEED: Map Update</sys:String>
+  <sys:String x:Key="strSubBoundary">Subdivision Boundary</sys:String>
+  <sys:String x:Key="strROWVacation">ROW Vacation</sys:String>
+  <sys:String x:Key="strROWDedication">ROW Dedication</sys:String>
+  <sys:String x:Key="strMeters">Meters</sys:String>
+  <sys:String x:Key="strMetersShort">m</sys:String>
+  <sys:String x:Key="strFeet">Feet</sys:String>
+  <sys:String x:Key="strFeetShort">ft</sys:String>
+  <sys:String x:Key="strFeetUS">US Feet</sys:String>
+  <sys:String x:Key="strFeetUSShort">us ft</sys:String>
+  <sys:String x:Key="strLink">Link</sys:String>
+  <sys:String x:Key="strLinkShort">lk</sys:String>
+
+  <sys:String x:Key="strAngleUnitDD">DD</sys:String>
+  <sys:String x:Key="strAngleUnitDMS">DMS</sys:String>
+  <sys:String x:Key="strVersion">Version</sys:String>
+
+  <sys:String x:Key="strLayer">Layer</sys:String>
+
+  <sys:String x:Key="strHigh">High</sys:String>
+  <sys:String x:Key="strRatio">Ratio</sys:String>
+  <sys:String x:Key="strAccuracy">Accuracy</sys:String>
+
+  <sys:String x:Key="strMetric">Square Meters</sys:String>
+  <sys:String x:Key="strSqFoot">Square Feet</sys:String>
+  <sys:String x:Key="strSqFootUS">Square US Feet</sys:String>
+  <sys:String x:Key="strMetricShort">sq.mtrs</sys:String>
+  <sys:String x:Key="strSqFootShort">sq.ft</sys:String>
+  <sys:String x:Key="strSqFootUSShort">sq.usft</sys:String>
+
+  <sys:String x:Key="strDiscardRecordInfo">Are you sure you want to discard record information?</sys:String>
+  <sys:String x:Key="strParcelShareBody">A Parcel has been shared with you using the ArcGIS Deed Drafter. This parcel can be appended to your Parcel Fabric dataset.</sys:String>
+  <sys:String x:Key="strTitle">Deed Drafter</sys:String>
+  <sys:String x:Key="strNew">New </sys:String>
+  <sys:String x:Key="strConfigReadError">Unable to start Deed Drafter because there is a problem reading configuration file.</sys:String>
+  <sys:String x:Key="strQueryLabel">Find current location or search for Parcel ID, Subdivision/Condo Name.</sys:String>
+  <sys:String x:Key="strOutlookStartError">Unable to start outlook as a mail client.</sys:String>
+  <sys:String x:Key="strDotNetVersionError">Deed Drafter needs .NET version 4.5 or greater.</sys:String>
+
+  <sys:String x:Key="strGeometryServiceFailed">Geometry service failed</sys:String>
+  <sys:String x:Key="strQueryServiceFailed">Query failed</sys:String>
+  <sys:String x:Key="strNavigationFailed">Navigation failed</sys:String>
+  <sys:String x:Key="strIdentifyServiceFailed">Identify failed</sys:String>
+  <sys:String x:Key="strFailedToCreateXML">Unable to create XML file because there are no source lines or the beginning point has not been defined.</sys:String>
+  <sys:String x:Key="strFailedToCreateXMLGeometryService">Unable to create XML file because of an issue with the Geometry Service</sys:String>
+  <sys:String x:Key="strQueryServiceSRNotEqual">The search layer's spatial reference does not match the map's spatial reference. Please check that the spatial reference string in the configuration file does not contain extra spaces or line-feeds.</sys:String>
+  <sys:String x:Key="strQueryServiceSupport">Ensure service supports query operations.</sys:String>
+  <sys:String x:Key="strHelpFileMissing">Help file is missing.</sys:String>
+  <sys:String x:Key="strSpatialReferenceError">Spatial Reference not configured correctly.</sys:String>
+  
+</ResourceDictionary>

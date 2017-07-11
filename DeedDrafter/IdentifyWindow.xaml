@@ -1,0 +1,38 @@
+﻿<Window x:Class="DeedDrafter.IdentifyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="ToolWindow"
+        WindowStartupLocation="Manual"
+        SizeToContent="WidthAndHeight" 
+        MaxHeight="500" Height="500"
+        MaxWidth="600" Width="600"
+        Background="#FFD6EBE6" 
+        Title="Parcel Information">
+  <Grid>
+    <DockPanel Margin="5" x:Name="Results">
+      <StackPanel x:Name="IdentifyResultsPanel" Orientation="Vertical" 
+                    VerticalAlignment="Top" DockPanel.Dock="Top">
+        <TextBlock Text="Click on map to identify another layer." 
+                    Foreground="Black" FontSize="12" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="IdentifyComboBox" SelectionChanged="IdentifyComboBox_SelectionChanged"
+                    Margin="0,5,0,2" HorizontalAlignment="Left"/>
+      </StackPanel>
+      <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"  
+                    Margin="0,5,0,0" DockPanel.Dock="Bottom">
+        <DataGrid x:Name="IdentifyDetailsDataGrid" AutoGenerateColumns="False" 
+                  HeadersVisibility="None" Background="White">
+          <DataGrid.Columns>
+            <DataGridTextColumn Binding="{Binding Path=Key}" FontWeight="Bold" IsReadOnly="True"/>
+            <DataGridTextColumn Binding="{Binding Path=Value}" IsReadOnly="True"/>
+          </DataGrid.Columns>
+        </DataGrid>
+      </ScrollViewer>
+    </DockPanel>
+    <StackPanel Margin="5" x:Name="NoResult" Visibility="Collapsed">
+      <TextBlock Text="No result found at location." 
+                Foreground="Black" FontSize="12" HorizontalAlignment="Left"/>
+      <TextBlock Text="Click on map to identify a layer." 
+                Foreground="Black" FontSize="12" HorizontalAlignment="Left"/>
+    </StackPanel>
+  </Grid>
+</Window>
